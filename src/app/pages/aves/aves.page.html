@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Aves de Guatemala</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let ave of aves">
+    <img [src]="ave.imageUrl" alt="Imagen del ave" />
+    <ion-card-content>
+      <h2>{{ ave.name }}</h2>
+      <p><strong>Familia:</strong> {{ ave.family }}</p>
+      <p><strong>Ubicación:</strong> {{ ave.location }}</p>
+      <p><strong>Descubridor:</strong> {{ ave.discoverer }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
